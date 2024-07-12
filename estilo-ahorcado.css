@@ -1,0 +1,317 @@
+/* * {
+  box-sizing: border-box;
+  background-color: beige;
+   
+
+}
+
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1.titulo {
+  margin: 50px auto 80px auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+h1#msg-final {
+  text-align: center;
+  color: crimson;
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+
+.zoom-in {
+  transform: scale(1) !important;
+}
+
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+
+.rojo {
+  color: red;
+}
+
+.verde {
+  color: green;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+h2.palabra {
+  margin: 0 auto 25px auto;
+  text-align: center;
+  color: royalblue;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+
+.col {
+  width: 50%;
+  text-align: center;
+}
+
+
+
+
+
+#turnos h3 {
+  margin: auto;
+}
+
+h3 span {
+  color: orangered;
+}
+
+.letra:disabled {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+picture {
+  position: relative;
+}
+
+picture img {
+  position: absolute;
+  top: -203px;
+  left: -205px;
+  height: 225px;
+}
+
+
+muñeco
+#image5,
+#image4,
+#image3,
+#image2,
+#image1,
+#image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.encuadre {
+  border: 2px dashed crimson;
+  padding: 3px 2px 2px 6px;
+}
+
+.divcol{
+ box-shadow: none; 
+} */
+
+* {
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1.titulo {
+  margin: 50px auto 80px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+h1#msg-final {
+  text-align: center;
+  color: rgb(220, 20, 20);
+  transition: all 0.5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+
+.zoom-in {
+  transform: scale(1) !important;
+}
+
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+}
+
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+
+.rojo {
+  color: red;
+}
+
+.verde {
+  color: green;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+h2.palabra {
+  margin: 0 auto 25px;
+  text-align: center;
+  color: royalblue;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+
+.col {
+  width: 50%;
+  text-align: center;
+}
+
+#turnos h3 {
+  margin: auto;
+}
+
+h3 span {
+  color: orangered;
+}
+
+.letra:disabled {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+picture {
+  position: relative;
+}
+
+picture img {
+  position: absolute;
+  top: -203px;
+  left: -205px;
+  height: 225px;
+}
+
+/* muñeco */
+#image5,
+#image4,
+#image3,
+#image2,
+#image1,
+#image0 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+
+.encuadre {
+  border: 2px dashed crimson;
+  padding: 3px 2px 2px 6px;
+}
+
+.divcol {
+  box-shadow: none; 
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .main-container {
+    padding: 10px; /* Menos padding en móviles */
+  }
+
+  .col {
+    width: 100%; /* Cambia a columna en móviles */
+    margin: 5px 0;
+  }
+
+  h1.titulo {
+    font-size: 1.8rem; /* Tamaño de fuente más pequeño */
+  }
+
+  h2.palabra {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+    letter-spacing: 3px;
+  }
+
+  button {
+    width: 100%; /* Botones a ancho completo */
+    padding: 15px; /* Aumentar el padding */
+    margin: 5px 0; /* Espaciado entre botones */
+  }
+
+  picture img {
+    height: auto; /* Mantener la proporción de la imagen */
+    max-width: 100%; /* Limitar el ancho de la imagen */
+    position: static; /* Restablecer posición en móviles */
+    margin: 0 auto; /* Centrar imagen */
+    top: 0; /* Restablecer posición */
+    left: 0; /* Restablecer posición */
+  }
+
+  #turnos h3 {
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño */
+  }
+
+  #msg-final {
+    font-size: 1.5rem; /* Tamaño de fuente para el mensaje final */
+  }
+}
